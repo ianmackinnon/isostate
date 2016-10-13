@@ -1,12 +1,17 @@
 SHELL := /bin/bash
-.PHONY : all package install install_config install_sources uninstall test
+.PHONY : all clean package install install_config install_sources uninstall test
 
+PYTHON = python3
 CONFIG_PATH = /etc/isostate
 SOURCES_PATH := $(CONFIG_PATH)/sources
 NAME = isostate
 TMP = /tmp/$(name).tmp
-VERSION = 0.1dev
+VERSION = 0.2dev
 DIST := dist/$(NAME)-$(VERSION).tar.gz
+
+
+all :
+clean :
 
 
 isostate.csv : sources/*.csv
@@ -15,7 +20,7 @@ isostate.csv : sources/*.csv
 
 
 package : isostate.py setup.py
-	python setup.py sdist
+	$(PYTHON) setup.py sdist
 
 $(DIST) : package
 
@@ -32,7 +37,7 @@ install_sources :
 
 install : install_config install_sources
 	cp isostate.py /usr/local/bin/isostate
-	python setup.py install
+	$(PYTHON) setup.py install
 
 uninstall :
 	rm -f /usr/local/bin/isostate
