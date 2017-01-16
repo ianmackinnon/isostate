@@ -237,8 +237,6 @@ class SourceText(object):
         high_scores = sorted(high_scores.values(),
                              key=lambda x: x["value"], reverse=True)
 
-        print(repr(high_scores))
-
         return high_scores
 
 
