@@ -266,10 +266,13 @@ def pick_one(text, search_func, limit=10):
         for i, row in enumerate(high_scores):
             if max_score is None:
                 max_score = row["value"]
+            show_name = row["name"]
+            if row["sub"]:
+                show_name += " (subregion)"
             sys.stderr.write(" %4s:  %10s  %s\n" % (
                 i + 1,
                 "+" * int(10 * row["value"] / max_score),
-                row["name"]
+                show_name
             ))
 
         sys.stderr.write("\n")
@@ -305,7 +308,7 @@ def pick_one(text, search_func, limit=10):
 
         row = high_scores[choice]
 
-        return row["iso2"], sub
+        return row["iso2"], sub or row["sub"]
 
 
 
