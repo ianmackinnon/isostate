@@ -7,7 +7,7 @@ import sys
 import csv
 import logging
 
-from optparse import OptionParser
+from argparse import ArgumentParser
 from collections import defaultdict
 
 
@@ -19,6 +19,9 @@ CONFIG_PATH = "/etc/isostate"
 ISOSTATE_CSV = "isostate.csv"
 SOURCES_PATH = "sources"
 
+SOURCE_BASENAME_FORMAT = "1.{source}.csv"
+SOURCE_BASENAME_RE = r"^1\.([a-z-]+)\.([a-z]{2})\.csv$"
+
 DEFAULT_LANG = "en"
 DEFAULT_NAME = "short"
 
@@ -29,6 +32,18 @@ class LookupNotFoundException(Exception):
 
 class NameNotFoundException(Exception):
     pass
+
+
+
+def list_sources():
+    path = os.path.join(CONFIG_PATH, SOURCES_PATH)
+    for source in os.listdir(path):
+        match = re.compile(SOURCE_BASENAME_RE).match(source)
+        if not match:
+            continue
+        (name, lang) = match.groups()
+        print("%s.%s" % (name, lang))
+
 
 
 
@@ -73,7 +88,9 @@ class Iso(object):
     def source_iter(cls, name=DEFAULT_NAME, lang=DEFAULT_LANG, source=None):
         key = cls.key(name, lang)
         if source is None:
-            source = "1.%s.csv" % key
+            source = SOURCE_BASENAME_FORMAT.format(**{
+                "source": key
+            })
             path = os.path.join(CONFIG_PATH, SOURCES_PATH, source)
             if not os.path.exists(path):
                 path = os.path.join(SOURCES_PATH, source)
@@ -98,6 +115,7 @@ class Iso(object):
         for row in reader:
             if not len(row):
                 continue
+            row = [v.strip() for v in row]
             iso2, _features, lang, name = row
             if not key in self._lookup:
                 self._lookup[key] = {}
@@ -383,30 +401,53 @@ def text_to_ngrams(text, size=3):
 def main():
     LOG.addHandler(logging.StreamHandler())
 
-    usage = """%prog SEARCH..."""
-
-    parser = OptionParser(usage=usage)
-    parser.add_option(
-        "-v", "--verbose", dest="verbose",
+    parser = ArgumentParser("Search for ISO country codes.")
+    parser.add_argument(
+        "--verbose", "-v",
         action="count", default=0,
         help="Print verbose information for debugging.")
-    parser.add_option(
-        "-q", "--quiet", dest="quiet",
+    parser.add_argument(
+        "--quiet", "-q",
         action="count", default=0,
         help="Suppress warnings.")
 
-    (options, args) = parser.parse_args()
+    parser.add_argument(
+        "--cache", "-c",
+        action="store",
+        help="Path to cache file.")
 
-    log_level = (logging.ERROR, logging.WARNING, logging.INFO, logging.DEBUG,)[
-        max(0, min(3, 1 + options.verbose - options.quiet))]
-    LOG.setLevel(log_level)
+    parser.add_argument(
+        "--list-sources", "-l",
+        action="store_true",
+        help="List sources.")
 
-    if not len(args):
-        parser.print_usage()
-        sys.exit(1)
+    parser.add_argument(
+        "search", metavar="SEARCH",
+        nargs="*",
+        action="store",
+        help="Search string`.")
 
-    for text in args:
-        print(Iso(text) or "")
+    args = parser.parse_args()
+
+    level = (logging.ERROR, logging.WARNING, logging.INFO, logging.DEBUG)[
+        max(0, min(3, 1 + args.verbose - args.quiet))]
+    LOG.setLevel(level)
+
+    if args.list_sources:
+        list_sources()
+        return
+
+    if not args.search:
+        LOG.warning("No search terms given. Nothing to do.")
+        sys.exit(0)
+
+    iso = Iso(cache=args.cache)
+
+    iso.add_lookup("short", "en")
+    for needle in args.search:
+        iso2 = iso.iso2(needle)
+        short_en = iso.name(iso2, "short", "en")
+        print("%s\t%s" % (iso2, short_en))
 
 
 
