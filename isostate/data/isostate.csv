@@ -1,0 +1,783 @@
+AE; ; en; uae
+AX; ; en; aland islands
+BA; ; en; bosnia and hercegovina
+BL; ; en; saint barthelemy
+CD; ; en; drc
+CG; ; en; brazzaville
+CI; ; en; cote d'ivoire
+CW; ; en; Curacao
+FK; ; en; malvinas
+FM; ; en; fsm
+GW; ; en; bissau
+HK; ; en; hong kong china special administrative region
+HK; ; en; hong kong sar
+KG; ; en; kyrgyz republic
+KP; ; en; dprk
+LA; ; en; laos
+MK; ; en; fyrom
+MM; ; en; burma
+MO; ; en; macao china special administrative region
+MO; ; en; macao sar
+PS; ; en; occupied palestinian territories
+US; ; en; united states of america
+US; ; en; usa
+RS; >; en; kosovo
+GB; >; en; akrotiri and dhekelia
+GE; >; en; abkhazia
+GE; >; en; apsny
+AZ; >; en; nagorno-karabakh
+AZ; >; en; artsakh republic
+AZ; >; en; nkr
+CY; >; en; northern-cyprus
+CY; >; en; turkish republic of northern cyprus
+CY; >; en; trnc
+SO; >; en; somaliland
+GE; >; en; south-ossetia
+MD; >; en; transnistria
+AF; ; en; AFGHANISTAN
+AX; ; en; ÅLAND ISLANDS
+AL; ; en; ALBANIA
+DZ; ; en; ALGERIA
+AS; ; en; AMERICAN SAMOA
+AD; ; en; ANDORRA
+AO; ; en; ANGOLA
+AI; ; en; ANGUILLA
+AQ; ; en; ANTARCTICA
+AG; ; en; ANTIGUA AND BARBUDA
+AR; ; en; ARGENTINA
+AM; ; en; ARMENIA
+AW; ; en; ARUBA
+AU; ; en; AUSTRALIA
+AT; ; en; AUSTRIA
+AZ; ; en; AZERBAIJAN
+BS; ; en; BAHAMAS
+BH; ; en; BAHRAIN
+BD; ; en; BANGLADESH
+BB; ; en; BARBADOS
+BY; ; en; BELARUS
+BE; ; en; BELGIUM
+BZ; ; en; BELIZE
+BJ; ; en; BENIN
+BM; ; en; BERMUDA
+BT; ; en; BHUTAN
+BO; ; en; BOLIVIA, PLURINATIONAL STATE OF
+BQ; ; en; BONAIRE, SINT EUSTATIUS AND SABA
+BA; ; en; BOSNIA AND HERZEGOVINA
+BW; ; en; BOTSWANA
+BV; ; en; BOUVET ISLAND
+BR; ; en; BRAZIL
+IO; ; en; BRITISH INDIAN OCEAN TERRITORY
+BN; ; en; BRUNEI DARUSSALAM
+BG; ; en; BULGARIA
+BF; ; en; BURKINA FASO
+BI; ; en; BURUNDI
+KH; ; en; CAMBODIA
+CM; ; en; CAMEROON
+CA; ; en; CANADA
+CV; ; en; CAPE VERDE
+KY; ; en; CAYMAN ISLANDS
+CF; ; en; CENTRAL AFRICAN REPUBLIC
+TD; ; en; CHAD
+CL; ; en; CHILE
+CN; ; en; CHINA
+CX; ; en; CHRISTMAS ISLAND
+CC; ; en; COCOS (KEELING) ISLANDS
+CO; ; en; COLOMBIA
+KM; ; en; COMOROS
+CG; ; en; CONGO
+CD; ; en; CONGO, THE DEMOCRATIC REPUBLIC OF THE
+CK; ; en; COOK ISLANDS
+CR; ; en; COSTA RICA
+CI; ; en; CÔTE D'IVOIRE
+HR; ; en; CROATIA
+CU; ; en; CUBA
+CW; ; en; CURAÇAO
+CY; ; en; CYPRUS
+CZ; ; en; CZECH REPUBLIC
+DK; ; en; DENMARK
+DJ; ; en; DJIBOUTI
+DM; ; en; DOMINICA
+DO; ; en; DOMINICAN REPUBLIC
+EC; ; en; ECUADOR
+EG; ; en; EGYPT
+SV; ; en; EL SALVADOR
+GQ; ; en; EQUATORIAL GUINEA
+ER; ; en; ERITREA
+EE; ; en; ESTONIA
+ET; ; en; ETHIOPIA
+FK; ; en; FALKLAND ISLANDS (MALVINAS)
+FO; ; en; FAROE ISLANDS
+FJ; ; en; FIJI
+FI; ; en; FINLAND
+FR; ; en; FRANCE
+GF; ; en; FRENCH GUIANA
+PF; ; en; FRENCH POLYNESIA
+TF; ; en; FRENCH SOUTHERN TERRITORIES
+GA; ; en; GABON
+GM; ; en; GAMBIA
+GE; ; en; GEORGIA
+DE; ; en; GERMANY
+GH; ; en; GHANA
+GI; ; en; GIBRALTAR
+GR; ; en; GREECE
+GL; ; en; GREENLAND
+GD; ; en; GRENADA
+GP; ; en; GUADELOUPE
+GU; ; en; GUAM
+GT; ; en; GUATEMALA
+GG; ; en; GUERNSEY
+GN; ; en; GUINEA
+GW; ; en; GUINEA-BISSAU
+GY; ; en; GUYANA
+HT; ; en; HAITI
+HM; ; en; HEARD ISLAND AND MCDONALD ISLANDS
+VA; ; en; HOLY SEE (VATICAN CITY STATE)
+HN; ; en; HONDURAS
+HK; ; en; HONG KONG
+HU; ; en; HUNGARY
+IS; ; en; ICELAND
+IN; ; en; INDIA
+ID; ; en; INDONESIA
+IR; ; en; IRAN, ISLAMIC REPUBLIC OF
+IQ; ; en; IRAQ
+IE; ; en; IRELAND
+IM; ; en; ISLE OF MAN
+IL; ; en; ISRAEL
+IT; ; en; ITALY
+JM; ; en; JAMAICA
+JP; ; en; JAPAN
+JE; ; en; JERSEY
+JO; ; en; JORDAN
+KZ; ; en; KAZAKHSTAN
+KE; ; en; KENYA
+KI; ; en; KIRIBATI
+KP; ; en; KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF
+KR; ; en; KOREA, REPUBLIC OF
+KW; ; en; KUWAIT
+KG; ; en; KYRGYZSTAN
+LA; ; en; LAO PEOPLE'S DEMOCRATIC REPUBLIC
+LV; ; en; LATVIA
+LB; ; en; LEBANON
+LS; ; en; LESOTHO
+LR; ; en; LIBERIA
+LY; ; en; LIBYA
+LI; ; en; LIECHTENSTEIN
+LT; ; en; LITHUANIA
+LU; ; en; LUXEMBOURG
+MO; ; en; MACAO
+MK; ; en; MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF
+MG; ; en; MADAGASCAR
+MW; ; en; MALAWI
+MY; ; en; MALAYSIA
+MV; ; en; MALDIVES
+ML; ; en; MALI
+MT; ; en; MALTA
+MH; ; en; MARSHALL ISLANDS
+MQ; ; en; MARTINIQUE
+MR; ; en; MAURITANIA
+MU; ; en; MAURITIUS
+YT; ; en; MAYOTTE
+MX; ; en; MEXICO
+FM; ; en; MICRONESIA, FEDERATED STATES OF
+MD; ; en; MOLDOVA, REPUBLIC OF
+MC; ; en; MONACO
+MN; ; en; MONGOLIA
+ME; ; en; MONTENEGRO
+MS; ; en; MONTSERRAT
+MA; ; en; MOROCCO
+MZ; ; en; MOZAMBIQUE
+MM; ; en; MYANMAR
+NA; ; en; NAMIBIA
+NR; ; en; NAURU
+NP; ; en; NEPAL
+NL; ; en; NETHERLANDS
+NC; ; en; NEW CALEDONIA
+NZ; ; en; NEW ZEALAND
+NI; ; en; NICARAGUA
+NE; ; en; NIGER
+NG; ; en; NIGERIA
+NU; ; en; NIUE
+NF; ; en; NORFOLK ISLAND
+MP; ; en; NORTHERN MARIANA ISLANDS
+NO; ; en; NORWAY
+OM; ; en; OMAN
+PK; ; en; PAKISTAN
+PW; ; en; PALAU
+PS; ; en; PALESTINE, STATE OF
+PA; ; en; PANAMA
+PG; ; en; PAPUA NEW GUINEA
+PY; ; en; PARAGUAY
+PE; ; en; PERU
+PH; ; en; PHILIPPINES
+PN; ; en; PITCAIRN
+PL; ; en; POLAND
+PT; ; en; PORTUGAL
+PR; ; en; PUERTO RICO
+QA; ; en; QATAR
+RE; ; en; RÉUNION
+RO; ; en; ROMANIA
+RU; ; en; RUSSIAN FEDERATION
+RW; ; en; RWANDA
+BL; ; en; SAINT BARTHÉLEMY
+SH; ; en; SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA
+KN; ; en; SAINT KITTS AND NEVIS
+LC; ; en; SAINT LUCIA
+MF; ; en; SAINT MARTIN (FRENCH PART)
+PM; ; en; SAINT PIERRE AND MIQUELON
+VC; ; en; SAINT VINCENT AND THE GRENADINES
+WS; ; en; SAMOA
+SM; ; en; SAN MARINO
+ST; ; en; SAO TOME AND PRINCIPE
+SA; ; en; SAUDI ARABIA
+SN; ; en; SENEGAL
+RS; ; en; SERBIA
+SC; ; en; SEYCHELLES
+SL; ; en; SIERRA LEONE
+SG; ; en; SINGAPORE
+SX; ; en; SINT MAARTEN (DUTCH PART)
+SK; ; en; SLOVAKIA
+SI; ; en; SLOVENIA
+SB; ; en; SOLOMON ISLANDS
+SO; ; en; SOMALIA
+ZA; ; en; SOUTH AFRICA
+GS; ; en; SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS
+SS; ; en; SOUTH SUDAN
+ES; ; en; SPAIN
+LK; ; en; SRI LANKA
+SD; ; en; SUDAN
+SR; ; en; SURINAME
+SJ; ; en; SVALBARD AND JAN MAYEN
+SZ; ; en; SWAZILAND
+SE; ; en; SWEDEN
+CH; ; en; SWITZERLAND
+SY; ; en; SYRIAN ARAB REPUBLIC
+TW; ; en; TAIWAN, PROVINCE OF CHINA
+TJ; ; en; TAJIKISTAN
+TZ; ; en; TANZANIA, UNITED REPUBLIC OF
+TH; ; en; THAILAND
+TL; ; en; TIMOR-LESTE
+TG; ; en; TOGO
+TK; ; en; TOKELAU
+TO; ; en; TONGA
+TT; ; en; TRINIDAD AND TOBAGO
+TN; ; en; TUNISIA
+TR; ; en; TURKEY
+TM; ; en; TURKMENISTAN
+TC; ; en; TURKS AND CAICOS ISLANDS
+TV; ; en; TUVALU
+UG; ; en; UGANDA
+UA; ; en; UKRAINE
+AE; ; en; UNITED ARAB EMIRATES
+GB; ; en; UNITED KINGDOM
+US; ; en; UNITED STATES
+UM; ; en; UNITED STATES MINOR OUTLYING ISLANDS
+UY; ; en; URUGUAY
+UZ; ; en; UZBEKISTAN
+VU; ; en; VANUATU
+VE; ; en; VENEZUELA, BOLIVARIAN REPUBLIC OF
+VN; ; en; VIET NAM
+VG; ; en; VIRGIN ISLANDS, BRITISH
+VI; ; en; VIRGIN ISLANDS, U.S.
+WF; ; en; WALLIS AND FUTUNA
+EH; ; en; WESTERN SAHARA
+YE; ; en; YEMEN
+ZM; ; en; ZAMBIA
+ZW; ; en; ZIMBABWE
+AF; ; fr; AFGHANISTAN
+ZA; ; fr; AFRIQUE DU SUD
+AX; ; fr; ÅLAND, ÎLES
+AL; ; fr; ALBANIE
+DZ; ; fr; ALGÉRIE
+DE; ; fr; ALLEMAGNE
+AD; ; fr; ANDORRE
+AO; ; fr; ANGOLA
+AI; ; fr; ANGUILLA
+AQ; ; fr; ANTARCTIQUE
+AG; ; fr; ANTIGUA-ET-BARBUDA
+SA; ; fr; ARABIE SAOUDITE
+AR; ; fr; ARGENTINE
+AM; ; fr; ARMÉNIE
+AW; ; fr; ARUBA
+AU; ; fr; AUSTRALIE
+AT; ; fr; AUTRICHE
+AZ; ; fr; AZERBAÏDJAN
+BS; ; fr; BAHAMAS
+BH; ; fr; BAHREÏN
+BD; ; fr; BANGLADESH
+BB; ; fr; BARBADE
+BY; ; fr; BÉLARUS
+BE; ; fr; BELGIQUE
+BZ; ; fr; BELIZE
+BJ; ; fr; BÉNIN
+BM; ; fr; BERMUDES
+BT; ; fr; BHOUTAN
+BO; ; fr; BOLIVIE, l'ÉTAT PLURINATIONAL DE
+BQ; ; fr; BONAIRE, SAINT-EUSTACHE ET SABA
+BA; ; fr; BOSNIE-HERZÉGOVINE
+BW; ; fr; BOTSWANA
+BV; ; fr; BOUVET, ÎLE
+BR; ; fr; BRÉSIL
+BN; ; fr; BRUNEI DARUSSALAM
+BG; ; fr; BULGARIE
+BF; ; fr; BURKINA FASO
+BI; ; fr; BURUNDI
+KY; ; fr; CAÏMANS, ÎLES
+KH; ; fr; CAMBODGE
+CM; ; fr; CAMEROUN
+CA; ; fr; CANADA
+CV; ; fr; CAP-VERT
+CF; ; fr; CENTRAFRICAINE, RÉPUBLIQUE
+CL; ; fr; CHILI
+CN; ; fr; CHINE
+CX; ; fr; CHRISTMAS, ÎLE
+CY; ; fr; CHYPRE
+CC; ; fr; COCOS (KEELING), ÎLES
+CO; ; fr; COLOMBIE
+KM; ; fr; COMORES
+CG; ; fr; CONGO
+CD; ; fr; CONGO, LA RÉPUBLIQUE DÉMOCRATIQUE DU
+CK; ; fr; COOK, ÎLES
+KR; ; fr; CORÉE, RÉPUBLIQUE DE
+KP; ; fr; CORÉE, RÉPUBLIQUE POPULAIRE DÉMOCRATIQUE DE
+CR; ; fr; COSTA RICA
+CI; ; fr; CÔTE D'IVOIRE
+HR; ; fr; CROATIE
+CU; ; fr; CUBA
+CW; ; fr; CURAÇAO
+DK; ; fr; DANEMARK
+DJ; ; fr; DJIBOUTI
+DO; ; fr; DOMINICAINE, RÉPUBLIQUE
+DM; ; fr; DOMINIQUE
+EG; ; fr; ÉGYPTE
+SV; ; fr; EL SALVADOR
+AE; ; fr; ÉMIRATS ARABES UNIS
+EC; ; fr; ÉQUATEUR
+ER; ; fr; ÉRYTHRÉE
+ES; ; fr; ESPAGNE
+EE; ; fr; ESTONIE
+US; ; fr; ÉTATS-UNIS
+ET; ; fr; ÉTHIOPIE
+FK; ; fr; FALKLAND, ÎLES (MALVINAS)
+FO; ; fr; FÉROÉ, ÎLES
+FJ; ; fr; FIDJI
+FI; ; fr; FINLANDE
+FR; ; fr; FRANCE
+GA; ; fr; GABON
+GM; ; fr; GAMBIE
+GE; ; fr; GÉORGIE
+GS; ; fr; GÉORGIE DU SUD-ET-LES ÎLES SANDWICH DU SUD
+GH; ; fr; GHANA
+GI; ; fr; GIBRALTAR
+GR; ; fr; GRÈCE
+GD; ; fr; GRENADE
+GL; ; fr; GROENLAND
+GP; ; fr; GUADELOUPE
+GU; ; fr; GUAM
+GT; ; fr; GUATEMALA
+GG; ; fr; GUERNESEY
+GN; ; fr; GUINÉE
+GW; ; fr; GUINÉE-BISSAU
+GQ; ; fr; GUINÉE ÉQUATORIALE
+GY; ; fr; GUYANA
+GF; ; fr; GUYANE FRANÇAISE
+HT; ; fr; HAÏTI
+HM; ; fr; HEARD-ET-ÎLES MACDONALD, ÎLE
+HN; ; fr; HONDURAS
+HK; ; fr; HONG KONG
+HU; ; fr; HONGRIE
+IM; ; fr; ÎLE DE MAN
+UM; ; fr; ÎLES MINEURES ÉLOIGNÉES DES ÉTATS-UNIS
+VG; ; fr; ÎLES VIERGES BRITANNIQUES
+VI; ; fr; ÎLES VIERGES DES ÉTATS-UNIS
+IN; ; fr; INDE
+ID; ; fr; INDONÉSIE
+IR; ; fr; IRAN, RÉPUBLIQUE ISLAMIQUE D'
+IQ; ; fr; IRAQ
+IE; ; fr; IRLANDE
+IS; ; fr; ISLANDE
+IL; ; fr; ISRAËL
+IT; ; fr; ITALIE
+JM; ; fr; JAMAÏQUE
+JP; ; fr; JAPON
+JE; ; fr; JERSEY
+JO; ; fr; JORDANIE
+KZ; ; fr; KAZAKHSTAN
+KE; ; fr; KENYA
+KG; ; fr; KIRGHIZISTAN
+KI; ; fr; KIRIBATI
+KW; ; fr; KOWEÏT
+LA; ; fr; LAO, RÉPUBLIQUE DÉMOCRATIQUE POPULAIRE
+LS; ; fr; LESOTHO
+LV; ; fr; LETTONIE
+LB; ; fr; LIBAN
+LR; ; fr; LIBÉRIA
+LY; ; fr; LIBYE
+LI; ; fr; LIECHTENSTEIN
+LT; ; fr; LITUANIE
+LU; ; fr; LUXEMBOURG
+MO; ; fr; MACAO
+MK; ; fr; MACÉDOINE, L'EX-RÉPUBLIQUE YOUGOSLAVE DE
+MG; ; fr; MADAGASCAR
+MY; ; fr; MALAISIE
+MW; ; fr; MALAWI
+MV; ; fr; MALDIVES
+ML; ; fr; MALI
+MT; ; fr; MALTE
+MP; ; fr; MARIANNES DU NORD, ÎLES
+MA; ; fr; MAROC
+MH; ; fr; MARSHALL, ÎLES
+MQ; ; fr; MARTINIQUE
+MU; ; fr; MAURICE
+MR; ; fr; MAURITANIE
+YT; ; fr; MAYOTTE
+MX; ; fr; MEXIQUE
+FM; ; fr; MICRONÉSIE, ÉTATS FÉDÉRÉS DE
+MD; ; fr; MOLDOVA, RÉPUBLIQUE DE
+MC; ; fr; MONACO
+MN; ; fr; MONGOLIE
+ME; ; fr; MONTÉNÉGRO
+MS; ; fr; MONTSERRAT
+MZ; ; fr; MOZAMBIQUE
+MM; ; fr; MYANMAR
+NA; ; fr; NAMIBIE
+NR; ; fr; NAURU
+NP; ; fr; NÉPAL
+NI; ; fr; NICARAGUA
+NE; ; fr; NIGER
+NG; ; fr; NIGÉRIA
+NU; ; fr; NIUÉ
+NF; ; fr; NORFOLK, ÎLE
+NO; ; fr; NORVÈGE
+NC; ; fr; NOUVELLE-CALÉDONIE
+NZ; ; fr; NOUVELLE-ZÉLANDE
+IO; ; fr; OCÉAN INDIEN, TERRITOIRE BRITANNIQUE DE L'
+OM; ; fr; OMAN
+UG; ; fr; OUGANDA
+UZ; ; fr; OUZBÉKISTAN
+PK; ; fr; PAKISTAN
+PW; ; fr; PALAOS
+PS; ; fr; PALESTINE, ÉTAT DE
+PA; ; fr; PANAMA
+PG; ; fr; PAPOUASIE-NOUVELLE-GUINÉE
+PY; ; fr; PARAGUAY
+NL; ; fr; PAYS-BAS
+PE; ; fr; PÉROU
+PH; ; fr; PHILIPPINES
+PN; ; fr; PITCAIRN
+PL; ; fr; POLOGNE
+PF; ; fr; POLYNÉSIE FRANÇAISE
+PR; ; fr; PORTO RICO
+PT; ; fr; PORTUGAL
+QA; ; fr; QATAR
+RE; ; fr; RÉUNION
+RO; ; fr; ROUMANIE
+GB; ; fr; ROYAUME-UNI
+RU; ; fr; RUSSIE, FÉDÉRATION DE
+RW; ; fr; RWANDA
+EH; ; fr; SAHARA OCCIDENTAL
+BL; ; fr; SAINT-BARTHÉLEMY
+SH; ; fr; SAINTE-HÉLÈNE, ASCENSION ET TRISTAN DA CUNHA
+LC; ; fr; SAINTE-LUCIE
+KN; ; fr; SAINT-KITTS-ET-NEVIS
+SM; ; fr; SAINT-MARIN
+MF; ; fr; SAINT-MARTIN(PARTIE FRANÇAISE)
+SX; ; fr; SAINT-MARTIN (PARTIE NÉERLANDAISE)
+PM; ; fr; SAINT-PIERRE-ET-MIQUELON
+VA; ; fr; SAINT-SIÈGE (ÉTAT DE LA CITÉ DU VATICAN)
+VC; ; fr; SAINT-VINCENT-ET-LES GRENADINES
+SB; ; fr; SALOMON, ÎLES
+WS; ; fr; SAMOA
+AS; ; fr; SAMOA AMÉRICAINES
+ST; ; fr; SAO TOMÉ-ET-PRINCIPE
+SN; ; fr; SÉNÉGAL
+RS; ; fr; SERBIE
+SC; ; fr; SEYCHELLES
+SL; ; fr; SIERRA LEONE
+SG; ; fr; SINGAPOUR
+SK; ; fr; SLOVAQUIE
+SI; ; fr; SLOVÉNIE
+SO; ; fr; SOMALIE
+SD; ; fr; SOUDAN
+SS; ; fr; SOUDAN DU SUD
+LK; ; fr; SRI LANKA
+SE; ; fr; SUÈDE
+CH; ; fr; SUISSE
+SR; ; fr; SURINAME
+SJ; ; fr; SVALBARD ET ÎLE JAN MAYEN
+SZ; ; fr; SWAZILAND
+SY; ; fr; SYRIENNE, RÉPUBLIQUE ARABE
+TJ; ; fr; TADJIKISTAN
+TW; ; fr; TAÏWAN, PROVINCE DE CHINE
+TZ; ; fr; TANZANIE, RÉPUBLIQUE-UNIE DE
+TD; ; fr; TCHAD
+CZ; ; fr; TCHÈQUE, RÉPUBLIQUE
+TF; ; fr; TERRES AUSTRALES FRANÇAISES
+TH; ; fr; THAÏLANDE
+TL; ; fr; TIMOR-LESTE
+TG; ; fr; TOGO
+TK; ; fr; TOKELAU
+TO; ; fr; TONGA
+TT; ; fr; TRINITÉ-ET-TOBAGO
+TN; ; fr; TUNISIE
+TM; ; fr; TURKMÉNISTAN
+TC; ; fr; TURKS-ET-CAÏCOS, ÎLES
+TR; ; fr; TURQUIE
+TV; ; fr; TUVALU
+UA; ; fr; UKRAINE
+UY; ; fr; URUGUAY
+VU; ; fr; VANUATU
+VE; ; fr; VENEZUELA, RÉPUBLIQUE BOLIVARIENNE DU
+VN; ; fr; VIET NAM
+WF; ; fr; WALLIS ET FUTUNA
+YE; ; fr; YÉMEN
+ZM; ; fr; ZAMBIE
+ZW; ; fr; ZIMBABWE
+AF; ; en; Afghanistan
+AX; ; en; Åland Islands
+AL; ; en; Albania
+DZ; ; en; Algeria
+AS; ; en; American Samoa
+AD; ; en; Andorra
+AO; ; en; Angola
+AI; ; en; Anguilla
+AQ; ; en; Antarctica
+AG; ; en; Antigua & Barbuda
+AR; ; en; Argentina
+AM; ; en; Armenia
+AW; ; en; Aruba
+AU; ; en; Australia
+AT; ; en; Austria
+AZ; ; en; Azerbaijan
+BS; ; en; Bahamas
+BH; ; en; Bahrain
+BD; ; en; Bangladesh
+BB; ; en; Barbados
+BY; ; en; Belarus
+BE; ; en; Belgium
+BZ; ; en; Belize
+BJ; ; en; Benin
+BM; ; en; Bermuda
+BT; ; en; Bhutan
+BO; ; en; Bolivia
+BQ; ; en; Bonaire, Sint Eustatius & Saba
+BA; ; en; Bosnia & Herzegovina
+BW; ; en; Botswana
+BV; ; en; Bouvet Island
+BR; ; en; Brazil
+IO; ; en; British Indian Ocean Territory
+BN; ; en; Brunei Darussalam
+BG; ; en; Bulgaria
+BF; ; en; Burkina Faso
+BI; ; en; Burundi
+KH; ; en; Cambodia
+CM; ; en; Cameroon
+CA; ; en; Canada
+CV; ; en; Cape Verde
+KY; ; en; Cayman Islands
+CF; ; en; Central African Republic
+TD; ; en; Chad
+CL; ; en; Chile
+CN; ; en; China
+CX; ; en; Christmas Island
+CC; ; en; Cocos Islands
+CO; ; en; Colombia
+KM; ; en; Comoros
+CG; ; en; Congo
+CD; ; en; Democratic Republic of Congo
+CK; ; en; Cook Islands
+CR; ; en; Costa Rica
+CI; ; en; Ivory Coast
+HR; ; en; Croatia
+CU; ; en; Cuba
+CW; ; en; Curaçao
+CY; ; en; Cyprus
+CZ; ; en; Czech Republic
+DK; ; en; Denmark
+DJ; ; en; Djibouti
+DM; ; en; Dominica
+DO; ; en; Dominican Republic
+EC; ; en; Ecuador
+EG; ; en; Egypt
+SV; ; en; El Salvador
+GQ; ; en; Equatorial Guinea
+ER; ; en; Eritrea
+EE; ; en; Estonia
+ET; ; en; Ethiopia
+FK; ; en; Falklands
+FO; ; en; Faroe Islands
+FJ; ; en; Fiji
+FI; ; en; Finland
+FR; ; en; France
+GF; ; en; French Guiana
+PF; ; en; French Polynesia
+TF; ; en; French Southern Territories
+GA; ; en; Gabon
+GM; ; en; Gambia
+GE; ; en; Georgia
+DE; ; en; Germany
+GH; ; en; Ghana
+GI; ; en; Gibraltar
+GR; ; en; Greece
+GL; ; en; Greenland
+GD; ; en; Grenada
+GP; ; en; Guadeloupe
+GU; ; en; Guam
+GT; ; en; Guatemala
+GG; ; en; Guernsey
+GN; ; en; Guinea
+GW; ; en; Guinea-Bissau
+GY; ; en; Guyana
+HT; ; en; Haiti
+HM; ; en; Heard & Mcdonald Islands
+VA; ; en; Vatican
+HN; ; en; Honduras
+HK; ; en; Hong Kong
+HU; ; en; Hungary
+IS; ; en; Iceland
+IN; ; en; India
+ID; ; en; Indonesia
+IR; ; en; Iran
+IQ; ; en; Iraq
+IE; ; en; Ireland
+IM; ; en; Isle of Man
+IL; ; en; Israel
+IT; ; en; Italy
+JM; ; en; Jamaica
+JP; ; en; Japan
+JE; ; en; Jersey
+JO; ; en; Jordan
+KZ; ; en; Kazakhstan
+KE; ; en; Kenya
+KI; ; en; Kiribati
+KP; ; en; North Korea
+KR; ; en; South Korea
+KW; ; en; Kuwait
+KG; ; en; Kyrgyzstan
+LA; ; en; Lao
+LV; ; en; Latvia
+LB; ; en; Lebanon
+LS; ; en; Lesotho
+LR; ; en; Liberia
+LY; ; en; Libya
+LI; ; en; Liechtenstein
+LT; ; en; Lithuania
+LU; ; en; Luxembourg
+MO; ; en; Macao
+MK; ; en; Macedonia
+MG; ; en; Madagascar
+MW; ; en; Malawi
+MY; ; en; Malaysia
+MV; ; en; Maldives
+ML; ; en; Mali
+MT; ; en; Malta
+MH; ; en; Marshall Islands
+MQ; ; en; Martinique
+MR; ; en; Mauritania
+MU; ; en; Mauritius
+YT; ; en; Mayotte
+MX; ; en; Mexico
+FM; ; en; Micronesia
+MD; ; en; Moldova
+MC; ; en; Monaco
+MN; ; en; Mongolia
+ME; ; en; Montenegro
+MS; ; en; Montserrat
+MA; ; en; Morocco
+MZ; ; en; Mozambique
+MM; ; en; Myanmar
+NA; ; en; Namibia
+NR; ; en; Nauru
+NP; ; en; Nepal
+NL; ; en; Netherlands
+NC; ; en; New Caledonia
+NZ; ; en; New Zealand
+NI; ; en; Nicaragua
+NE; ; en; Niger
+NG; ; en; Nigeria
+NU; ; en; Niue
+NF; ; en; Norfolk Island
+MP; ; en; Northern Mariana Islands
+NO; ; en; Norway
+OM; ; en; Oman
+PK; ; en; Pakistan
+PW; ; en; Palau
+PS; ; en; Palestine
+PA; ; en; Panama
+PG; ; en; Papua New Guinea
+PY; ; en; Paraguay
+PE; ; en; Peru
+PH; ; en; Philippines
+PN; ; en; Pitcairn
+PL; ; en; Poland
+PT; ; en; Portugal
+PR; ; en; Puerto Rico
+QA; ; en; Qatar
+RE; ; en; Réunion
+RO; ; en; Romania
+RU; ; en; Russia
+RW; ; en; Rwanda
+BL; ; en; Saint Barthélemy
+SH; ; en; Saint Helena, Ascension & Tristan Da Cunha
+KN; ; en; Saint Kitts & Nevis
+LC; ; en; Saint Lucia
+MF; ; en; French Saint Martin
+PM; ; en; Saint Pierre & Miquelon
+VC; ; en; Saint Vincent & The Grenadines
+WS; ; en; Samoa
+SM; ; en; San Marino
+ST; ; en; Sao Tome & Principe
+SA; ; en; Saudi Arabia
+SN; ; en; Senegal
+RS; ; en; Serbia
+SC; ; en; Seychelles
+SL; ; en; Sierra Leone
+SG; ; en; Singapore
+SX; ; en; Dutch Saint Martin
+SK; ; en; Slovakia
+SI; ; en; Slovenia
+SB; ; en; Solomon Islands
+SO; ; en; Somalia
+ZA; ; en; South Africa
+GS; ; en; South Georgia & The South Sandwich Islands
+SS; ; en; South Sudan
+ES; ; en; Spain
+LK; ; en; Sri Lanka
+SD; ; en; Sudan
+SR; ; en; Suriname
+SJ; ; en; Svalbard & Jan Mayen
+SZ; ; en; Swaziland
+SE; ; en; Sweden
+CH; ; en; Switzerland
+SY; ; en; Syria
+TW; ; en; Taiwan
+TJ; ; en; Tajikistan
+TZ; ; en; Tanzania
+TH; ; en; Thailand
+TL; ; en; East Timor
+TG; ; en; Togo
+TK; ; en; Tokelau
+TO; ; en; Tonga
+TT; ; en; Trinidad & Tobago
+TN; ; en; Tunisia
+TR; ; en; Turkey
+TM; ; en; Turkmenistan
+TC; ; en; Turks & Caicos Islands
+TV; ; en; Tuvalu
+UG; ; en; Uganda
+UA; ; en; Ukraine
+AE; ; en; United Arab Emirates
+GB; ; en; United Kingdom
+US; ; en; United States
+UM; ; en; United States Minor Outlying Islands
+UY; ; en; Uruguay
+UZ; ; en; Uzbekistan
+VU; ; en; Vanuatu
+VE; ; en; Venezuela
+VN; ; en; Vietnam
+VG; ; en; British Virgin Islands
+VI; ; en; United States Virgin Islands
+WF; ; en; Wallis & Futuna
+EH; ; en; Western Sahara
+YE; ; en; Yemen
+ZM; ; en; Zambia
+ZW; ; en; Zimbabwe
