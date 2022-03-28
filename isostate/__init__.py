@@ -1,25 +1,27 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 import os
 import re
 import sys
 import csv
 import logging
-
+import pkg_resources
+from typing import Union
+from pathlib import Path
 from argparse import ArgumentParser
 from collections import defaultdict
+from importlib.resources import files
 
 
+
+__version__ = pkg_resources.require("isostate")[0].version
 
 LOG = logging.getLogger('isostate')
 
-CONFIG_PATH = "/etc/isostate"
 
-ISOSTATE_CSV = "isostate.csv"
-SOURCES_PATH = "sources"
+PACKAGE_DATA_PATH = files('isostate').joinpath('data')
+DEFAULT_CSV_PATH = PACKAGE_DATA_PATH.joinpath('isostate.csv')
 
-SOURCE_BASENAME_FORMAT = "1.{source}.csv"
 SOURCE_BASENAME_RE = r"^1\.([a-z-]+)\.([a-z]{2})\.csv$"
 
 DEFAULT_LANG = "en"
@@ -35,15 +37,15 @@ class NameNotFoundException(Exception):
 
 
 
-def list_sources():
-    path = os.path.join(CONFIG_PATH, SOURCES_PATH)
-    for source in os.listdir(path):
-        match = re.compile(SOURCE_BASENAME_RE).match(source)
+def get_source_dict() -> dict[tuple[str, str]: Path]:
+    path = PACKAGE_DATA_PATH
+    source_list = []
+    for source_path in sorted(path.glob("*.csv")):
+        match = re.compile(SOURCE_BASENAME_RE).match(source_path.name)
         if not match:
             continue
-        (name, lang) = match.groups()
-        print("%s.%s" % (name, lang))
-
+        source_list.append((match.groups(), source_path))
+    return dict(sorted(source_list))
 
 
 
@@ -59,11 +61,17 @@ def codes(name=DEFAULT_NAME, lang=DEFAULT_LANG, source=None):
 
 
 
-class Iso(object):
-    def __init__(self, source="text", cache=None):
+class Iso():
+    def __init__(
+            self,
+            source="text",
+            cache: Union[None, str, Path] = None,
+            batch: bool = False,
+    ):
         self._source = None
         self._cache_path = None
         self._lookup = {}
+        self._batch = batch
 
         if cache:
             self._cache_path = cache
@@ -85,20 +93,26 @@ class Iso(object):
 
 
     @classmethod
-    def source_iter(cls, name=DEFAULT_NAME, lang=DEFAULT_LANG, source=None):
-        key = cls.key(name, lang)
+    def source_iter(
+            cls,
+            name: str = DEFAULT_NAME,
+            lang: str = DEFAULT_LANG,
+            source: Union[None, str, Path] = None
+    ):
         if source is None:
-            source = SOURCE_BASENAME_FORMAT.format(**{
-                "source": key
-            })
-            path = os.path.join(CONFIG_PATH, SOURCES_PATH, source)
-            if not os.path.exists(path):
-                path = os.path.join(SOURCES_PATH, source)
+            try:
+                path = get_source_dict()[(name, lang)]
+            except IndexError:
+                LOG.error(
+                    "Error: no source file available for name `{%s}` and lang `{%s}`.",
+                    name, lang
+                )
+                sys.exit(1)
         else:
-            path = source
+            path = Path(source)
 
         try:
-            csv_data = open(path, "r", encoding="utf-8")
+            csv_data = path.open("r", encoding="utf-8")
         except Exception as e:
             LOG.error(
                 "Could not open file '%s' for name '%s' and language '%s'.",
@@ -135,14 +149,22 @@ class Iso(object):
         return self._lookup[key][iso2]
 
 
-    def iso2(self, text, search=True, accept_sub=False):
+    def iso2(
+            self,
+            text,
+            batch: Union[None, bool] = None,
+            accept_sub: bool = False,
+    ):
         search_text = clean_text(text)
 
         assert self._source
 
         iso2, sub = self._source.match(search_text)
 
-        if search and not iso2:
+        if batch is None:
+            batch = self._batch
+
+        if not batch and not iso2:
             iso2, sub = self._source.search(search_text, insert=self.insert)
 
         if iso2 and sub and not accept_sub:
@@ -168,8 +190,12 @@ class Iso(object):
 
 
 
-class SourceText(object):
+class SourceText():
     def __init__(self, data, lang=DEFAULT_LANG, sub=False, size=(3, 5, 7)):
+        """
+        size: ngram size
+        """
+
         self.lang = lang
         self.sub = sub
         self.size = size
@@ -186,13 +212,13 @@ class SourceText(object):
             self.by_name[row["name"]] = {
                 "iso2":row["iso2"],
                 "sub":row["sub"],
-                }
+            }
 
         def ngram_dict():
             return {
                 "name": defaultdict(float),
                 "total": 0.0
-                }
+            }
 
         names = defaultdict(list)
         for row in self.data:
@@ -207,7 +233,6 @@ class SourceText(object):
                 for ngram in text_to_ngrams(name, self.size):
                     self.ngrams[ngram]["name"][name] += weight
                     self.ngrams[ngram]["total"] += weight
-
 
 
     def match(self, text):
@@ -342,7 +367,7 @@ def clean_text(text):
 
 
 
-def load_data(source_csv=None):
+def load_data(cache_path=None):
     data = {}
 
     def process_line(line):
@@ -360,19 +385,23 @@ def load_data(source_csv=None):
             "name": name,
         }
 
-    path = os.path.join(CONFIG_PATH, ISOSTATE_CSV)
-    if not os.path.exists(path):
-        path = ISOSTATE_CSV
+    path = DEFAULT_CSV_PATH
+    n = 0
 
-    with open(path, "r", encoding="utf-8") as csv_fp:
+    with path.open("r", encoding="utf-8") as csv_fp:
         for line in csv_fp.readlines():
             process_line(line)
 
-    if source_csv:
-        if os.path.exists(source_csv):
-            with open(source_csv, "r", encoding="utf-8") as csv_fp:
+    LOG.debug(f"Loaded {len(data) - n:d} entries from `{path}`")
+    n = len(data)
+
+    if cache_path:
+        if os.path.exists(cache_path):
+            with open(cache_path, "r", encoding="utf-8") as csv_fp:
                 for line in csv_fp.readlines():
                     process_line(line)
+        LOG.debug(f"Loaded {len(data) - n:d} entries from `{cache_path}`")
+
 
     return list(data.values())
 
@@ -412,6 +441,11 @@ def main():
         help="Suppress warnings.")
 
     parser.add_argument(
+        "--batch", "-b",
+        action="store_true",
+        help="Non-interactive mode. Search is disabled; only exact matches will be printed.")
+
+    parser.add_argument(
         "--cache", "-c",
         action="store",
         help="Path to cache file.")
@@ -434,22 +468,18 @@ def main():
     LOG.setLevel(level)
 
     if args.list_sources:
-        list_sources()
+        for (name, lang) in get_source_dict():
+            print(f"{name}.{lang}")
         return
 
     if not args.search:
         LOG.warning("No search terms given. Nothing to do.")
         sys.exit(0)
 
-    iso = Iso(cache=args.cache)
+    iso = Iso(cache=args.cache, batch=args.batch)
 
     iso.add_lookup("short", "en")
     for needle in args.search:
         iso2 = iso.iso2(needle)
         short_en = iso.name(iso2, "short", "en")
         print("%s\t%s" % (iso2, short_en))
-
-
-
-if __name__ == "__main__":
-    main()

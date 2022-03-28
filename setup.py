@@ -1,15 +1,13 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-
-
-from distutils.core import setup
-
-
+from pathlib import Path
+from setuptools import setup, find_packages
 
 setup(
-    name='isostate',
-    version='0.2dev',
-    py_modules=['isostate'],
-    license='Creative Commons Attribution license',
+    name="isostate",
+    version=Path("VERSION").read_text(encoding="utf-8").strip(),
+    packages=find_packages(),
+    package_data={
+        "isostate": [
+            "data/*.csv",
+        ],
+    },
 )

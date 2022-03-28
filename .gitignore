@@ -1,7 +1,6 @@
 *.pyc
-
-build/
+*.egg-info
+.tox/
 dist/
-MANIFEST
+build/
 
-isostate.csv
