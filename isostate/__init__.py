@@ -5,16 +5,16 @@ import re
 import sys
 import csv
 import logging
-import pkg_resources
 from typing import Union
 from pathlib import Path
 from argparse import ArgumentParser
 from collections import defaultdict
+from importlib.metadata import version
 from importlib.resources import files
 
 
 
-__version__ = pkg_resources.require("isostate")[0].version
+__version__ = version("isostate")
 
 LOG = logging.getLogger('isostate')
 

@@ -1,6 +1,7 @@
 SHELL := /bin/bash
 NAME := isostate
 VERSION := $(shell cat VERSION)
+PYTHON := python3.12
 TAR := dist/isostate-$(VERSION).tar.gz
 WHL := dist/isostate-$(VERSION)-py3-none-any.whl
 SUB := # eg. `[test]`
@@ -25,8 +26,8 @@ build : $(WHL) $(TAR)
 $(WHL) $(TAR) : 
 	rm -rf dist
 	python3 -m build
-	unzip -l dist/isostate-*.whl
-	tar --list -f dist/isostate-*.tar.gz
+	unzip -l dist/$(NAME)-*.whl
+	tar --list -f dist/$(NAME)-*.tar.gz
 
 clean-packages :
 	rm -rf .venv build dist *.egg-info
@@ -39,28 +40,28 @@ clean-python-cache :
 
 install-virtualenv-dir :
 	rm -rf .venv
-	virtualenv --python python3.9 .venv
+	virtualenv --python $(PYTHON) .venv
 	.venv/bin/pip install .$(SUB)
 	find .venv | grep iso
 	.venv/bin/isostate -l
 
 install-virtualenv-tar : $(TAR)
 	rm -rf .venv
-	virtualenv --python python3.9 .venv
+	virtualenv --python $(PYTHON) .venv
 	.venv/bin/pip install '$(TAR)$(SUB)'
 	find .venv | grep iso
 	.venv/bin/isostate -l
 
 install-virtualenv-whl : $(WHL)
 	rm -rf .venv
-	virtualenv --python python3.9 .venv
+	virtualenv --python $(PYTHON) .venv
 	.venv/bin/pip install '$(WHL)$(SUB)'
 	find .venv | grep iso
 	.venv/bin/isostate -l
 
 install-virtualenv-test :
 	rm -rf .venv
-	virtualenv --python python3.9 .venv
+	virtualenv --python $(PYTHON) .venv
 	.venv/bin/pip install -e .[test]
 
 test :
